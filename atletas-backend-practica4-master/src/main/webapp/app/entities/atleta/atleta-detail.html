@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span data-translate="atletasApp.atleta.detail.title">Atleta</span> {{vm.atleta.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="atletasApp.atleta.nombre">Nombre</span></dt>
+        <dd>
+            <span>{{vm.atleta.nombre}}</span>
+        </dd>
+        <dt><span data-translate="atletasApp.atleta.apellido">Apellido</span></dt>
+        <dd>
+            <span>{{vm.atleta.apellido}}</span>
+        </dd>
+        <dt><span data-translate="atletasApp.atleta.nacionalidad">Nacionalidad</span></dt>
+        <dd>
+            <span>{{vm.atleta.nacionalidad}}</span>
+        </dd>
+        <dt><span data-translate="atletasApp.atleta.fechaNacimiento">Fecha Nacimiento</span></dt>
+        <dd>
+            <span>{{vm.atleta.fechaNacimiento | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="atleta-detail.edit({id:vm.atleta.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

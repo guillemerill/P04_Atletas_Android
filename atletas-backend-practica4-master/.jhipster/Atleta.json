@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "apellido",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "nacionalidad",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fechaNacimiento",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20170108114519",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "atleta",
+    "pagination": "no"
+}

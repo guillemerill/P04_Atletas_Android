@@ -1,0 +1,62 @@
+<div>
+    <h2 data-translate="atletasApp.atleta.home.title">Atletas</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="atleta.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="atletasApp.atleta.home.createLabel">
+                        Create new Atleta
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="atletasApp.atleta.nombre">Nombre</span></th>
+                    <th><span data-translate="atletasApp.atleta.apellido">Apellido</span></th>
+                    <th><span data-translate="atletasApp.atleta.nacionalidad">Nacionalidad</span></th>
+                    <th><span data-translate="atletasApp.atleta.fechaNacimiento">Fecha Nacimiento</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="atleta in vm.atletas track by atleta.id">
+                    <td><a ui-sref="atleta-detail({id:atleta.id})">{{atleta.id}}</a></td>
+                    <td>{{atleta.nombre}}</td>
+                    <td>{{atleta.apellido}}</td>
+                    <td>{{atleta.nacionalidad}}</td>
+                        <td>{{atleta.fechaNacimiento | date:'mediumDate'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="atleta-detail({id:atleta.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="atleta.edit({id:atleta.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="atleta.delete({id:atleta.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

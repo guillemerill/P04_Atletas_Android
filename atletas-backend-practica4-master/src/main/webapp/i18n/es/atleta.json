@@ -1,0 +1,25 @@
+{
+    "atletasApp": {
+        "atleta" : {
+            "home": {
+                "title": "Atletas",
+                "createLabel": "Crear nuevo Atleta",
+                "createOrEditLabel": "Crear o editar Atleta",
+                "search": "Search for Atleta"
+            },
+            "created": "Un nuevo Atleta ha sido creado con el identificador {{ param }}",
+            "updated": "Un Atleta ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Atleta ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Atleta {{ id }}?"
+            },
+            "detail": {
+                "title": "Atleta"
+            },
+            "nombre": "Nombre",
+            "apellido": "Apellido",
+            "nacionalidad": "Nacionalidad",
+            "fechaNacimiento": "Fecha Nacimiento"
+        }
+    }
+}

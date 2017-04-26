@@ -1,0 +1,25 @@
+{
+    "atletasApp": {
+        "atleta" : {
+            "home": {
+                "title": "Atletas",
+                "createLabel": "Create a new Atleta",
+                "createOrEditLabel": "Create or edit a Atleta",
+                "search": "Search for Atleta"
+            },
+            "created": "A new Atleta is created with identifier {{ param }}",
+            "updated": "A Atleta is updated with identifier {{ param }}",
+            "deleted": "A Atleta is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Atleta {{ id }}?"
+            },
+            "detail": {
+                "title": "Atleta"
+            },
+            "nombre": "Nombre",
+            "apellido": "Apellido",
+            "nacionalidad": "Nacionalidad",
+            "fechaNacimiento": "Fecha Nacimiento"
+        }
+    }
+}
